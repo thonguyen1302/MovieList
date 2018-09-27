@@ -10,6 +10,9 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <%= render "layouts/nav.html.erb" if current_user %>
+      <%= yield %>
+    </div>
   </body>
 </html>
